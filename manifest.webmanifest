@@ -1,9 +1,23 @@
 {
   "name": "CoachLog",
   "short_name": "CoachLog",
+  "description": "PWA do komunikacji trener ↔ podopieczny. Check-iny, postęp, makro i plany.",
   "start_url": "./index.html#/login",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0b1220",
   "theme_color": "#0b1220",
-  "icons": []
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

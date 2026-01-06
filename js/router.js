@@ -38,7 +38,7 @@ export function initRouter(rootEl) {
     }
 
     // aktywny link w topnav
-    document.querySelectorAll("[data-nav]").forEach(a => {
+    document.querySelectorAll("[data-nav]").forEach((a) => {
       const href = a.getAttribute("href") || "";
       a.classList.toggle("active", href === `#${path}`);
     });

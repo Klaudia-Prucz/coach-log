@@ -1,10 +1,5 @@
 import { initRouter, registerRoute, navigate } from "./router.js";
-import {
-  bindOfflineBanner,
-  getOrInitState,
-  setRole,
-  saveState,
-} from "./storage.js";
+import { bindOfflineBanner, getOrInitState, setRole, saveState } from "./storage.js";
 
 const root = document.getElementById("app");
 
@@ -185,7 +180,8 @@ function viewTrainer({ root }) {
 function viewClient({ root, params }) {
   const state = getOrInitState();
   const clientId = params.clientId || state.demo.clients[0]?.id;
-  const client = state.demo.clients.find((x) => x.id === clientId) || state.demo.clients[0];
+  const client =
+    state.demo.clients.find((x) => x.id === clientId) || state.demo.clients[0];
 
   if (!client) {
     root.innerHTML = `

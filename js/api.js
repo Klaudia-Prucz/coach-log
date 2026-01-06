@@ -4,5 +4,5 @@
 export const api = {
   async ping() {
     return { ok: true, ts: Date.now() };
-  }
+  },
 };

@@ -21,10 +21,30 @@ export function getOrInitState() {
     session: { role: null }, // "trainer" | "client"
     demo: {
       clients: [
-        { id: "c1", name: "Podopieczny #1", modules: { macro: true, diet: false, training: false, checkin: true, progress: true } },
-        { id: "c2", name: "Podopieczny #2", modules: { macro: true, diet: true, training: true, checkin: true, progress: true } }
-      ]
-    }
+        {
+          id: "c1",
+          name: "Podopieczny #1",
+          modules: {
+            macro: true,
+            diet: false,
+            training: false,
+            checkin: true,
+            progress: true,
+          },
+        },
+        {
+          id: "c2",
+          name: "Podopieczny #2",
+          modules: {
+            macro: true,
+            diet: true,
+            training: true,
+            checkin: true,
+            progress: true,
+          },
+        },
+      ],
+    },
   };
   saveState(initial);
   return initial;
