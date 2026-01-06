@@ -1,0 +1,9 @@
+{
+  "name": "CoachLog",
+  "short_name": "CoachLog",
+  "start_url": "./index.html#/login",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "icons": []
+}
